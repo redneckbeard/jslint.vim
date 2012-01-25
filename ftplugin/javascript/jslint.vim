@@ -63,8 +63,6 @@ else
   let s:runjslint_ext = 'js'
   if exists("$JS_CMD")
     let s:cmd = "$JS_CMD"
-  elseif executable('/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc')
-    let s:cmd = '/System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc'
   elseif executable('node')
     let s:cmd = 'node'
   elseif executable('js')
